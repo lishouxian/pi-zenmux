@@ -47,8 +47,12 @@ pi remove npm:@zenmux/pi-zenmux-oauth
 ## 开发
 
 ```bash
+npm install                               # 类型检查所需的 devDependencies
+npm run check                             # tsc --noEmit
 pi -ne -e ./index.ts --list-models zenmux
 ```
+
+`pi install` 安装时使用 `--omit=dev`，不会安装这些开发依赖。
 
 ## License
 
