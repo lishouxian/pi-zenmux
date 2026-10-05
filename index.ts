@@ -1,7 +1,7 @@
 /**
  * Minimal ZenMux provider for pi.
  *
- * - OAuth 2.0 PKCE login (`/login ZenMux`) with token refresh.
+ * - OAuth 2.0 PKCE login (`/login zenmux`) with token refresh.
  * - A small, hand-maintained model list with correct metadata, so pi's
  *   prompt-cache warming and adaptive thinking work.
  * - Requests go straight to pi's built-in `anthropic-messages` transport.
@@ -12,9 +12,7 @@ import { createServer } from "node:http";
 import type { OAuthCredentials, OAuthLoginCallbacks } from "@earendil-works/pi-ai/compat";
 import type { ExtensionAPI, ProviderModelConfig } from "@earendil-works/pi-coding-agent";
 
-// Pi shows the provider id in /model and the footer, so it carries the
-// brand's spelling. (Before 0.2.0 it was "zenmux"; see README to migrate.)
-const PROVIDER_ID = "ZenMux";
+const PROVIDER_ID = "zenmux";
 const OAUTH_ORIGIN = "https://zenmux.ai";
 const ANTHROPIC_BASE_URL = "https://zenmux.ai/api/anthropic";
 const CLIENT_ID = "zpc_-6SsDHPARf6Rg5TTzbvlOQka";
