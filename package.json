@@ -1,6 +1,6 @@
 {
   "name": "pi-zenmux",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Minimal ZenMux provider for pi: OAuth login and a curated Claude model list with working prompt-cache warming",
   "type": "module",
   "keywords": ["pi-package", "pi", "zenmux", "oauth", "claude"],
